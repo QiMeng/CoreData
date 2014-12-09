@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF8CC8661A36824E00772921 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8CC8651A36824E00772921 /* Foundation.framework */; };
+		FF8CC8681A36824E00772921 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8CC8671A36824E00772921 /* CoreGraphics.framework */; };
+		FF8CC86A1A36824E00772921 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8CC8691A36824E00772921 /* UIKit.framework */; };
+		FF8CC8701A36824E00772921 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF8CC86E1A36824E00772921 /* InfoPlist.strings */; };
+		FF8CC8721A36824E00772921 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8CC8711A36824E00772921 /* main.m */; };
+		FF8CC8761A36824E00772921 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8CC8751A36824E00772921 /* AppDelegate.m */; };
+		FF8CC8791A36824F00772921 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF8CC8771A36824F00772921 /* Main.storyboard */; };
+		FF8CC87C1A36824F00772921 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8CC87B1A36824F00772921 /* ViewController.m */; };
+		FF8CC87E1A36824F00772921 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF8CC87D1A36824F00772921 /* Images.xcassets */; };
+		FF8CC8851A36824F00772921 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8CC8841A36824F00772921 /* XCTest.framework */; };
+		FF8CC8861A36824F00772921 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8CC8651A36824E00772921 /* Foundation.framework */; };
+		FF8CC8871A36824F00772921 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8CC8691A36824E00772921 /* UIKit.framework */; };
+		FF8CC88F1A36824F00772921 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF8CC88D1A36824F00772921 /* InfoPlist.strings */; };
+		FF8CC8911A36824F00772921 /* CoreDataManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8CC8901A36824F00772921 /* CoreDataManagerTests.m */; };
+		FF8CC89D1A36827100772921 /* NewsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF8CC89B1A36827100772921 /* NewsModel.xcdatamodeld */; };
+		FF8CC8A01A36834800772921 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8CC89F1A36834800772921 /* CoreDataManager.m */; };
+		FF8CC8A31A36848700772921 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8CC8A21A36848700772921 /* News.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF8CC8881A36824F00772921 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF8CC85A1A36824E00772921 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF8CC8611A36824E00772921;
+			remoteInfo = CoreDataManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF8CC8621A36824E00772921 /* CoreDataManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF8CC8651A36824E00772921 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FF8CC8671A36824E00772921 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FF8CC8691A36824E00772921 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FF8CC86D1A36824E00772921 /* CoreDataManager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreDataManager-Info.plist"; sourceTree = "<group>"; };
+		FF8CC86F1A36824E00772921 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF8CC8711A36824E00772921 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF8CC8731A36824E00772921 /* CoreDataManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreDataManager-Prefix.pch"; sourceTree = "<group>"; };
+		FF8CC8741A36824E00772921 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FF8CC8751A36824E00772921 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FF8CC8781A36824F00772921 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF8CC87A1A36824F00772921 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FF8CC87B1A36824F00772921 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FF8CC87D1A36824F00772921 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FF8CC8831A36824F00772921 /* CoreDataManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF8CC8841A36824F00772921 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FF8CC88C1A36824F00772921 /* CoreDataManagerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreDataManagerTests-Info.plist"; sourceTree = "<group>"; };
+		FF8CC88E1A36824F00772921 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF8CC8901A36824F00772921 /* CoreDataManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataManagerTests.m; sourceTree = "<group>"; };
+		FF8CC89C1A36827100772921 /* NewsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NewsModel.xcdatamodel; sourceTree = "<group>"; };
+		FF8CC89E1A36834800772921 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		FF8CC89F1A36834800772921 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		FF8CC8A11A36848700772921 /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
+		FF8CC8A21A36848700772921 /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF8CC85F1A36824E00772921 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF8CC8681A36824E00772921 /* CoreGraphics.framework in Frameworks */,
+				FF8CC86A1A36824E00772921 /* UIKit.framework in Frameworks */,
+				FF8CC8661A36824E00772921 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF8CC8801A36824F00772921 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF8CC8851A36824F00772921 /* XCTest.framework in Frameworks */,
+				FF8CC8871A36824F00772921 /* UIKit.framework in Frameworks */,
+				FF8CC8861A36824F00772921 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF8CC8591A36824E00772921 = {
+			isa = PBXGroup;
+			children = (
+				FF8CC86B1A36824E00772921 /* CoreDataManager */,
+				FF8CC88A1A36824F00772921 /* CoreDataManagerTests */,
+				FF8CC8641A36824E00772921 /* Frameworks */,
+				FF8CC8631A36824E00772921 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF8CC8631A36824E00772921 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF8CC8621A36824E00772921 /* CoreDataManager.app */,
+				FF8CC8831A36824F00772921 /* CoreDataManagerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF8CC8641A36824E00772921 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF8CC8651A36824E00772921 /* Foundation.framework */,
+				FF8CC8671A36824E00772921 /* CoreGraphics.framework */,
+				FF8CC8691A36824E00772921 /* UIKit.framework */,
+				FF8CC8841A36824F00772921 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF8CC86B1A36824E00772921 /* CoreDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				FF8CC8741A36824E00772921 /* AppDelegate.h */,
+				FF8CC8751A36824E00772921 /* AppDelegate.m */,
+				FF8CC8771A36824F00772921 /* Main.storyboard */,
+				FF8CC87A1A36824F00772921 /* ViewController.h */,
+				FF8CC87B1A36824F00772921 /* ViewController.m */,
+				FF8CC89A1A36825B00772921 /* coredata */,
+				FF8CC87D1A36824F00772921 /* Images.xcassets */,
+				FF8CC86C1A36824E00772921 /* Supporting Files */,
+			);
+			path = CoreDataManager;
+			sourceTree = "<group>";
+		};
+		FF8CC86C1A36824E00772921 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF8CC86D1A36824E00772921 /* CoreDataManager-Info.plist */,
+				FF8CC86E1A36824E00772921 /* InfoPlist.strings */,
+				FF8CC8711A36824E00772921 /* main.m */,
+				FF8CC8731A36824E00772921 /* CoreDataManager-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF8CC88A1A36824F00772921 /* CoreDataManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF8CC8901A36824F00772921 /* CoreDataManagerTests.m */,
+				FF8CC88B1A36824F00772921 /* Supporting Files */,
+			);
+			path = CoreDataManagerTests;
+			sourceTree = "<group>";
+		};
+		FF8CC88B1A36824F00772921 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF8CC88C1A36824F00772921 /* CoreDataManagerTests-Info.plist */,
+				FF8CC88D1A36824F00772921 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF8CC89A1A36825B00772921 /* coredata */ = {
+			isa = PBXGroup;
+			children = (
+				FF8CC89B1A36827100772921 /* NewsModel.xcdatamodeld */,
+				FF8CC8A11A36848700772921 /* News.h */,
+				FF8CC8A21A36848700772921 /* News.m */,
+				FF8CC89E1A36834800772921 /* CoreDataManager.h */,
+				FF8CC89F1A36834800772921 /* CoreDataManager.m */,
+			);
+			name = coredata;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF8CC8611A36824E00772921 /* CoreDataManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF8CC8941A36824F00772921 /* Build configuration list for PBXNativeTarget "CoreDataManager" */;
+			buildPhases = (
+				FF8CC85E1A36824E00772921 /* Sources */,
+				FF8CC85F1A36824E00772921 /* Frameworks */,
+				FF8CC8601A36824E00772921 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreDataManager;
+			productName = CoreDataManager;
+			productReference = FF8CC8621A36824E00772921 /* CoreDataManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF8CC8821A36824F00772921 /* CoreDataManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF8CC8971A36824F00772921 /* Build configuration list for PBXNativeTarget "CoreDataManagerTests" */;
+			buildPhases = (
+				FF8CC87F1A36824F00772921 /* Sources */,
+				FF8CC8801A36824F00772921 /* Frameworks */,
+				FF8CC8811A36824F00772921 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF8CC8891A36824F00772921 /* PBXTargetDependency */,
+			);
+			name = CoreDataManagerTests;
+			productName = CoreDataManagerTests;
+			productReference = FF8CC8831A36824F00772921 /* CoreDataManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF8CC85A1A36824E00772921 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = QiMENG;
+				TargetAttributes = {
+					FF8CC8821A36824F00772921 = {
+						TestTargetID = FF8CC8611A36824E00772921;
+					};
+				};
+			};
+			buildConfigurationList = FF8CC85D1A36824E00772921 /* Build configuration list for PBXProject "CoreDataManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF8CC8591A36824E00772921;
+			productRefGroup = FF8CC8631A36824E00772921 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF8CC8611A36824E00772921 /* CoreDataManager */,
+				FF8CC8821A36824F00772921 /* CoreDataManagerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF8CC8601A36824E00772921 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF8CC87E1A36824F00772921 /* Images.xcassets in Resources */,
+				FF8CC8701A36824E00772921 /* InfoPlist.strings in Resources */,
+				FF8CC8791A36824F00772921 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF8CC8811A36824F00772921 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF8CC88F1A36824F00772921 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF8CC85E1A36824E00772921 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF8CC89D1A36827100772921 /* NewsModel.xcdatamodeld in Sources */,
+				FF8CC87C1A36824F00772921 /* ViewController.m in Sources */,
+				FF8CC8A31A36848700772921 /* News.m in Sources */,
+				FF8CC8A01A36834800772921 /* CoreDataManager.m in Sources */,
+				FF8CC8761A36824E00772921 /* AppDelegate.m in Sources */,
+				FF8CC8721A36824E00772921 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF8CC87F1A36824F00772921 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF8CC8911A36824F00772921 /* CoreDataManagerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF8CC8891A36824F00772921 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF8CC8611A36824E00772921 /* CoreDataManager */;
+			targetProxy = FF8CC8881A36824F00772921 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF8CC86E1A36824E00772921 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF8CC86F1A36824E00772921 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FF8CC8771A36824F00772921 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF8CC8781A36824F00772921 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF8CC88D1A36824F00772921 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF8CC88E1A36824F00772921 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF8CC8921A36824F00772921 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FF8CC8931A36824F00772921 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF8CC8951A36824F00772921 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreDataManager/CoreDataManager-Prefix.pch";
+				INFOPLIST_FILE = "CoreDataManager/CoreDataManager-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FF8CC8961A36824F00772921 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreDataManager/CoreDataManager-Prefix.pch";
+				INFOPLIST_FILE = "CoreDataManager/CoreDataManager-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FF8CC8981A36824F00772921 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CoreDataManager.app/CoreDataManager";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreDataManager/CoreDataManager-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CoreDataManagerTests/CoreDataManagerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FF8CC8991A36824F00772921 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CoreDataManager.app/CoreDataManager";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreDataManager/CoreDataManager-Prefix.pch";
+				INFOPLIST_FILE = "CoreDataManagerTests/CoreDataManagerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF8CC85D1A36824E00772921 /* Build configuration list for PBXProject "CoreDataManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF8CC8921A36824F00772921 /* Debug */,
+				FF8CC8931A36824F00772921 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF8CC8941A36824F00772921 /* Build configuration list for PBXNativeTarget "CoreDataManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF8CC8951A36824F00772921 /* Debug */,
+				FF8CC8961A36824F00772921 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FF8CC8971A36824F00772921 /* Build configuration list for PBXNativeTarget "CoreDataManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF8CC8981A36824F00772921 /* Debug */,
+				FF8CC8991A36824F00772921 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FF8CC89B1A36827100772921 /* NewsModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FF8CC89C1A36827100772921 /* NewsModel.xcdatamodel */,
+			);
+			currentVersion = FF8CC89C1A36827100772921 /* NewsModel.xcdatamodel */;
+			path = NewsModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FF8CC85A1A36824E00772921 /* Project object */;
+}
