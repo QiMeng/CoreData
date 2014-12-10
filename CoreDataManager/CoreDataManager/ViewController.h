@@ -7,7 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
+@interface ViewController : UIViewController <UITableViewDataSource,UITableViewDelegate,NSFetchedResultsControllerDelegate> {
+    
+    
+    __weak IBOutlet UITableView *myTableView;
+    
+    int pageInt;
+    
+    int maxCount;
+    
+    int fetchInt;
+    
+}
 
-@interface ViewController : UIViewController
+@property (nonatomic,strong) NSMutableArray * dataArray;
+
+
+@property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
 
 @end

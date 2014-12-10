@@ -16,7 +16,7 @@
 @property (nonatomic, retain) NSString * imgurl;
 @property (nonatomic, retain) NSString * islook;
 @property (nonatomic, retain) NSString * newsid;
-@property (nonatomic, retain) NSString * title;
+@property (nonatomic, retain) NSNumber * title;
 
 + (id)itemFormDic:(NSDictionary *)dic;
 

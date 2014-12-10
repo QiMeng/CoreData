@@ -126,7 +126,7 @@
 }
 
 //查询
-- (NSMutableArray*)selectData:(int)pageSize andOffset:(int)currentPage
+- (NSMutableArray*)selectData:(int)pageSize andOffset:(int)currentPage low:(int)low
 {
     NSManagedObjectContext *context = [self managedObjectContext];
     
@@ -134,6 +134,10 @@
     //setFetchLimit
     // 查询的偏移量
     //setFetchOffset
+    
+    NSSortDescriptor *sd1 = [[NSSortDescriptor alloc] initWithKey:@"title" ascending:NO];
+
+    NSArray *sortDescriptors = [NSArray arrayWithObjects:sd1, nil];
     
     /**
      NSFetchRequest(获取数据的请求)
@@ -143,6 +147,11 @@
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     [fetchRequest setFetchLimit:pageSize];
     [fetchRequest setFetchOffset:currentPage];
+    [fetchRequest setSortDescriptors:sortDescriptors];
+    
+    NSPredicate *preTemplate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"title < %d",low]];
+    [fetchRequest setPredicate:preTemplate];
+    
     
     /**
      *  NSEntityDescription(实体结构)
@@ -156,7 +165,7 @@
     for (News *info in fetchedObjects) {
         NSLog(@"id:%@", info.newsid);
         NSLog(@"title:%@", info.title);
-        [resultArray addObject:info];
+        [resultArray insertObject:info atIndex:0];
     }
     return resultArray;
 }
@@ -211,7 +220,13 @@
     }
 }
 
-
+- (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath{
+    
+    
+    
+    
+    
+}
 
 
 @end

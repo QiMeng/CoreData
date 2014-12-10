@@ -28,6 +28,7 @@
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
 
+
 /**
  *  保存数据到持久层（数据库）
  */
@@ -44,7 +45,7 @@
 //插入数据
 - (void)insertCoreData:(NSMutableArray*)dataArray;
 //查询
-- (NSMutableArray*)selectData:(int)pageSize andOffset:(int)currentPage;
+- (NSMutableArray*)selectData:(int)pageSize andOffset:(int)currentPage low:(int)low;
 //删除
 - (void)deleteData;
 //更新
